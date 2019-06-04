@@ -1,0 +1,140 @@
+/*---------Global---------*/
+body{
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #FEFEFE;
+}
+.container{
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.float-left-box{
+  height: 230px;
+  width: 200px;
+  text-align: center;
+  background-color: gold;
+  margin: 0 10px 90px 0;
+  /*vertical-align: top;*/ /*this stops remaining boxes to move down*/
+  border: solid #b30000;
+}
+.float-right-box{
+  height: 230px;
+  width: 200px;
+  text-align: center;
+  background-color: gold;
+  margin: 0 10px 90px 0;
+  /*vertical-align: top;*/ /*this stops remaining boxes to move down*/
+  border: solid #b30000;
+}
+
+/*creates a new font family from source format*/
+@font-face {
+  font-family: Quicksand;
+  src: url(Quicksand_Light.otf);
+}
+
+/*-------------------------*/
+
+#fixed-header{
+  position: fixed;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  color: yellow;
+  background-color: maroon;
+  text-align: center;
+  -webkit-animation: headerAnimation 2s;
+}
+#fixed-header h1{
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+#fixed-header h2{
+  margin-top: 0px;
+  font-size: 15px;
+}
+
+/* Phi Kap Collage */
+#showcase{
+  margin-top: 83px;
+  min-height: 700px;
+  min-width: 1000px;
+  background: url("phikap_collage.jpg") 200px -20px;
+  background-size: contain;
+  /*box-shadow: none | h-shadow v-shadow blur spread color
+                |inset|initial|inherit; */
+
+                /*top*/                       /*bottom*/
+  box-shadow: 0 10px 3px -5px #000 inset, 0 -12px 3px -7px inset;
+}
+
+/*"Give, expecting nothing thereof"*/
+#quote-box{
+  padding-top: 100px;
+  padding-bottom: 200px;
+  text-transform: capitalize;
+  border-bottom: 1px solid black;
+  -webkit-animation: fadeIn 3s;
+}
+
+#e-board{
+  margin-top: 200px;
+  padding-bottom: 200px;
+  border-bottom: 1px solid black;
+}
+
+#e-board img{
+  width: 200px;
+  height: 200px;
+}
+
+/* controls "Our Board Members" text*/
+#e-board .container > h1{
+  font-size: 40px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+#e-board p{
+  margin: 0px;
+}
+
+
+
+#events div{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+#contact-us{
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+#contact-us h1, h2{
+  font-size: 30px;
+}
+
+#contact-us p{
+  font-size: 25px;
+}
+
+#history{
+  font-size: 20px;
+  margin-top: 100px;
+  padding-bottom: 150px;
+  border-bottom: 1px solid black;
+}
+
+#history ul{
+  list-style: none;
+  padding: 20px 0 20px 0;
+}
+
+#history li{
+  padding: 10px 0 10px 0;
+}
